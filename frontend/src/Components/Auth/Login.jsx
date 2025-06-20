@@ -37,7 +37,7 @@ const Login = () => {
       setError("");
       localStorage.setItem("ToKeN","$Kdie&-Thekd>dkd*k3_kd6^%")
       toast.success("Login successfully");
-      navigate("/admin/auth-98zJ_owner-access")
+      navigate("/admin/owner-access")
     }
   };
 
