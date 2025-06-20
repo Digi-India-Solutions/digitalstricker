@@ -1,0 +1,144 @@
+.services-home-section{
+    width: 100%;
+    background-image: url(./bg.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.services-home-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.325);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.services-home-section .container{
+    position: relative;
+    z-index: 9;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.services-home-section .container .heading{
+    text-align: center;
+}
+
+.services-home-section .container span{
+    font-size: 33px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+}
+
+.services-home-section .container span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ed1721;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.services-home-section .container .service-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.services-home-section .container .service-box .same-col{
+    width: 30%;
+    height: 360px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.services-home-section .container .service-box .same-col .img{
+    width: 100%;
+    height: 60%;
+}
+
+.services-home-section .container .service-box .same-col .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-home-section .container .service-box .same-col .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+    padding: 10px 12px;
+}
+
+.services-home-section .container .service-box .same-col .detail h2{
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.services-home-section .container .service-box .same-col .detail p{
+    text-align: center;
+    font-size: 15px;
+}
+
+.services-home-section .container .service-box .same-col .detail .service-btn{
+    color: #ed1721;
+}
+
+.services-home-section .container .service-box .same-col .detail .service-btn:hover{
+    color: #ECC91F;
+}
+
+@media (max-width:1054px) {
+    
+    .services-home-section .container .service-box .same-col{
+        height: 440px;
+    }
+
+}
+
+@media (max-width:990px) {
+    
+    .services-home-section .container .service-box .same-col{
+        height: 490px;
+    }
+
+}
+
+@media (max-width:952px) {
+    
+    .services-home-section .container .service-box .same-col{
+        width: 47%;
+        height: 380px;
+    }
+
+}
+
+@media (max-width:764px) {
+    
+    .services-home-section .container .service-box .same-col{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width:600px) {
+    .services-home-section .container{
+        padding: 40px 20px;
+    }
+}

@@ -1,0 +1,151 @@
+.contactPage-section{
+    width: 100%;
+}
+
+.contactPage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.contactPage-section .container .bg{
+    width: 100%;
+    height: 200px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contactPage-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9389;
+}
+
+.contactPage-section .container .contact-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contactPage-section .container .contact-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.contactPage-section .container .contact-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.contactPage-section .container .contact-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.contactPage-section .container .contact-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up .left{
+    width: 48%;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up .left img{
+    width: 100%;
+    height: 100%;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: ; */
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .same-field{
+    width: 100%;
+    height: 40px;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .same-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .textarea{
+    width: 100%;
+    height: 90px;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(170, 170, 170);
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .contact-btn{
+padding: 10px;
+border-radius: 10px;
+border: none;
+font-size: 18px;
+font-weight: 600;
+background-color: #18286F;
+color: white;
+}
+
+.contactPage-section .container .contact-main-container .main-container .up form .contact-btn:hover{
+    background-color: #121e57;
+}
+
+@media (max-width:847px) {
+    .contactPage-section .container .contact-main-container .main-container .up{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .contactPage-section .container .contact-main-container .main-container .up .left{
+        width: 100%;
+    }
+    
+    .contactPage-section .container .contact-main-container .main-container .up form{
+        width: 100%;
+    }
+}
+
+@media (max-width:413px) {
+    .contactPage-section .container .contact-main-container{
+        padding: 30px;
+    }
+}

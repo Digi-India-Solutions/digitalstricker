@@ -1,0 +1,99 @@
+.telecom-section{
+    width: 100%;
+}
+
+.telecom-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.telecom-section .container .bg{
+    width: 100%;
+    height: 200px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.telecom-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9389;
+}
+
+.telecom-section .container .telecom-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.telecom-section .container .telecom-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.telecom-section .container .telecom-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.telecom-section .container .telecom-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.telecom-section .container .telecom-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.telecom-section .container .telecom-main-container .main-container .one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.telecom-section .container .telecom-main-container .main-container .two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.telecom-section .container .telecom-main-container .main-container .two .same-down{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.telecom-section .container .telecom-main-container .main-container .two .same-down span{
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}
+
+@media (max-width:621px) {
+    .telecom-section .container .telecom-main-container{
+        padding: 30px;
+    }
+
+    .telecom-section .container .telecom-main-container .heading span{
+        font-size: 27px;
+        font-weight: 700;
+        color: #2A3D93;
+        position: relative;
+    }
+}

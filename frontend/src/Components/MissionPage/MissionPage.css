@@ -1,0 +1,70 @@
+.missionpage-section{
+    width: 100%;
+}
+
+.missionpage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.missionpage-section .container .bg{
+    width: 100%;
+    height: 250px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.missionpage-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d935e;
+}
+
+.missionpage-section .container .mission-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.missionpage-section .container .mission-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.missionpage-section .container .mission-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.missionpage-section .container .mission-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.missionpage-section .container .mission-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+@media (max-width:600px) {
+    
+.missionpage-section .container .mission-main-container{
+    padding: 40px 20px;
+}
+    
+}

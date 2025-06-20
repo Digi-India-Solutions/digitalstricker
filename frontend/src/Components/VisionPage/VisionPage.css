@@ -1,0 +1,98 @@
+.visionPage-section{
+    width: 100%;
+}
+
+.visionPage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.visionPage-section .container .bg{
+    width: 100%;
+    height: 250px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.visionPage-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d936e;
+}
+
+.visionPage-section .container .vision-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.visionPage-section .container .vision-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.visionPage-section .container .vision-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.visionPage-section .container .vision-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.visionPage-section .container .vision-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.visionPage-section .container .vision-main-container .main-container .one{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.visionPage-section .container .vision-main-container .main-container .one p{
+    color: rgb(101, 101, 101);
+}
+
+.visionPage-section .container .vision-main-container .main-container .two{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.visionPage-section .container .vision-main-container .main-container .two span{
+    font-weight: 500;
+    color: rgb(59, 59, 59);
+}
+
+.visionPage-section .container .vision-main-container .main-container .two p{
+    color: rgb(108, 108, 108);
+}
+
+@media (max-width:453px) {
+    
+.visionPage-section .container .vision-main-container{
+    padding: 30px;
+}
+
+.visionPage-section .container .vision-main-container .heading span{
+    font-size: 25px;
+}
+    
+}

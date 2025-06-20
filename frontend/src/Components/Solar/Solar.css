@@ -1,0 +1,76 @@
+.solar-section{
+    width: 100%;
+}
+
+.solar-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.solar-section .container .bg{
+    width: 100%;
+    height: 200px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.solar-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9389;
+}
+
+.solar-section .container .solar-main-box{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.solar-section .container .solar-main-box .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.solar-section .container .solar-main-box .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.solar-section .container .solar-main-box .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.solar-section .container .solar-main-box .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width:470px) {
+    .solar-section .container .solar-main-box{
+        padding: 20px;
+    }
+
+    .solar-section .container .solar-main-box .heading span{
+        font-size: 27px;
+        font-weight: 700;
+        color: #2A3D93;
+        position: relative;
+    }
+}

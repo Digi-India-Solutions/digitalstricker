@@ -1,0 +1,183 @@
+.mission-section{
+    width: 100%;
+    background-image: url(./bg.png);
+}
+
+.mission-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mission-section .container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.mission-section .container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.mission-section .container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.mission-section .container .mission-main-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 460px;
+}
+
+.mission-section .container .mission-main-box .same{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(173, 173, 173);
+    background-color: white;
+    overflow: hidden;
+}
+
+.mission-section .container .mission-main-box .same .img{
+    height: 45%;
+    width: 100%;
+}
+
+.mission-section .container .mission-main-box .same .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mission-section .container .mission-main-box .same .detail{
+    height: 53%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 14px;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-left{
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-left .icon{
+    padding: 18px 20px;
+    background-color: #2A3D93;
+    border-radius: 50%;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-left .icon i{
+    font-size: 25px;
+    color: white;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-right{
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-right h4{
+    font-size: 20px;
+    font-weight: 700;
+    /* color: #ED   1D26; */
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-right a{
+    color: #ed1721;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-right a:hover{
+    color: #ECC91F;
+}
+
+@media (max-width:1063px) {
+    
+.mission-section .container .mission-main-box{
+    height: 500px;
+}
+}
+
+@media (max-width:975px) {
+    
+.mission-section .container .mission-main-box{
+    height: 550px;
+}
+    
+}
+
+@media (max-width:928px) {
+    
+
+.mission-section .container .mission-main-box{
+    height: auto;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.mission-section .container .mission-main-box .same{
+    height: 100%;
+    width: 100%;
+}
+    
+}
+
+@media (max-width:534px) {
+
+    .mission-section .container .mission-main-box .same .detail{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .mission-section .container .mission-main-box .same .detail .detail-right {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:600px) {
+    .mission-section .container{
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width:400px) {
+
+    .mission-section .container{
+        padding: 40px 30px;
+    }
+
+    
+.mission-section .container .mission-main-box .same .detail .detail-left .icon{
+    padding: 14px 18px;
+}
+
+.mission-section .container .mission-main-box .same .detail .detail-left .icon i{
+    font-size: 16px;
+    color: white;
+}
+    
+}

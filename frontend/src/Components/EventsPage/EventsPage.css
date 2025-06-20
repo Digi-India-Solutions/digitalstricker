@@ -1,0 +1,98 @@
+.event-section{
+    width: 100%;
+}
+
+.event-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-section .container .bg{
+    width: 100%;
+    height: 200px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.event-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9389;
+}
+
+.event-section .container .event-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event-section .container .event-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.event-section .container .event-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.event-section .container .event-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.event-section .container .event-main-container .main-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.event-section .container .event-main-container .main-container .col{
+    width: 32%;
+    height: 300px;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.event-section .container .event-main-container .main-container .col img{
+    width: 100%;
+    height: 100%;
+}
+
+.event-section .container .event-main-container .main-container .col:hover{
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+}
+
+@media (max-width:880px) {
+    .event-section .container .event-main-container .main-container .col{
+        width: 48%;
+    }
+}
+
+@media (max-width:580px) {
+    .event-section .container .event-main-container{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:460px) {
+    .event-section .container .event-main-container .main-container .col{
+        width: 100%;
+    }
+}

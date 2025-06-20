@@ -1,0 +1,76 @@
+.managmentTeam-section{
+    width: 100%;
+}
+
+.managmentTeam-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.managmentTeam-section .container .bg{
+    width: 100%;
+    height: 250px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.managmentTeam-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d936e;
+
+}
+
+.managmentTeam-section .container .managment-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.managmentTeam-section .container .managment-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.managmentTeam-section .container .managment-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.managmentTeam-section .container .managment-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.managmentTeam-section .container .managment-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width:465px) {
+    .managmentTeam-section .container .managment-main-container{
+        padding: 27px;
+    }
+
+    .managmentTeam-section .container .managment-main-container .heading span{
+        font-size: 26px;
+        font-weight: 700;
+        color: #2A3D93;
+        position: relative;
+    }
+    
+}

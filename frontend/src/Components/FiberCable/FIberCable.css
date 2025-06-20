@@ -1,0 +1,186 @@
+.FiberCable-section{
+    width: 100%;
+}
+
+.FiberCable-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.FiberCable-section .container .bg{
+    width: 100%;
+    height: 200px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.FiberCable-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9389;
+}
+
+.FiberCable-section .container .fibercable-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.FiberCable-section .container .fibercable-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.FiberCable-section .container .fibercable-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.FiberCable-section .container .fibercable-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .heading{
+    width: 100%;
+    text-align: left;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .heading h2{
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col{
+    width: 31%;
+    border: 1px solid rgb(142, 142, 142);
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col .img{
+    width: 100%;
+    height: 350px;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col .detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 10px;
+}
+
+.FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col .detail p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width:800px) {
+    .FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+    
+    .FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col{
+        height: auto;
+        width: 48%;
+        border: 1px solid rgb(142, 142, 142);
+    }
+    
+}
+
+@media (max-width:800px) {
+    .FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+    
+    .FiberCable-section .container .fibercable-main-container .main-container .same-row .bottom .col{
+        height: auto;
+        width: 100%;
+        border: 1px solid rgb(142, 142, 142);
+    }
+    
+}
+
+@media (max-width:560px) {
+    .FiberCable-section .container .fibercable-main-container{
+        padding: 20px;
+    }
+
+    .FiberCable-section .container .fibercable-main-container .heading span{
+        font-size: 27px;
+        font-weight: 700;
+        color: #2A3D93;
+        position: relative;
+    }
+}
+
+@media (max-width:400px) {
+    .FiberCable-section .container .fibercable-main-container{
+        padding: 10px;
+    }
+}
+
+@media (max-width:381px) {
+
+    .FiberCable-section .container .fibercable-main-container{
+        padding: 20px;
+    }
+    
+    .FiberCable-section .container .fibercable-main-container .heading span{
+        font-size: 36px;
+        font-weight: 700;
+        color: #2A3D93;
+        position: relative;
+    }
+
+}

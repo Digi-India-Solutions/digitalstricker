@@ -1,0 +1,116 @@
+.companyoverview-section{
+    width: 100%;
+}
+
+.companyoverview-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    
+}
+
+.companyoverview-section .container .bg{
+    width: 100%;
+    height: 250px;
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.companyoverview-section .container .bg::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2a3d9371;
+}
+
+.companyoverview-section .container .company-main-container{
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.companyoverview-section .container .company-main-container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.companyoverview-section .container .company-main-container .heading span{
+    font-size: 33px;
+    font-weight: 700;
+    color: #2A3D93;
+    position: relative;
+}
+
+.companyoverview-section .container .company-main-container .heading span::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ECC91F;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.companyoverview-section .container .company-main-container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.companyoverview-section .container .company-main-container .main-container span{
+    font-weight: 500;
+}
+
+.companyoverview-section .container .company-main-container .main-container .img-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.companyoverview-section .container .company-main-container .main-container .img-box img{
+    width: 22%;
+    height: 230px;
+}
+
+.companyoverview-section .container .company-main-container .main-container p{
+    color: rgb(106, 106, 106);
+}
+
+.companyoverview-section .container .company-main-container .main-container p span{
+    font-weight: 700;
+}
+
+@media (max-width:686px) {
+
+    .companyoverview-section .container .company-main-container .main-container .img-box{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .companyoverview-section .container .company-main-container .main-container .img-box img{
+        width: 47%;
+        height: 230px;
+    }
+    
+}
+
+@media (max-width:460px) {
+    
+    .companyoverview-section .container .company-main-container .main-container .img-box img{
+        width: 100%;
+        height: 230px;
+    }
+
+}
+
+@media (max-width:400px) {
+    
+    .companyoverview-section .container .company-main-container {
+        padding: 30px;
+    }
+
+}
