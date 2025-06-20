@@ -1,8 +1,8 @@
 import axios from "axios";
 
 export const uploadToCloudinary = async (file) => {
-  const cloudName = "dfet60ou1"; 
-  const unsignedUploadPreset = "frontend-383"; 
+  const cloudName = "dxmysfiux"; 
+  const unsignedUploadPreset = "Digital Striker"; 
 
   const url = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
 
